@@ -1,0 +1,13 @@
+verilator src.sv \
+-CFLAGS "-std=c++11 -Wall -g -O0" \
+-LDFLAGS "-pthread -lutil" \
+-Wall \
+-Wno-PINCONNECTEMPTY \
+-Wno-fatal \
+-Wno-BLKANDNBLK \
+-Wno-REDEFMACRO \
+-Wno-PINMISSING \
+-Wno-DECLFILENAME \
+-Wno-TIMESCALEMOD \
+-Wno-VARHIDDEN \
+--cc
